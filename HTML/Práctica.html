@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Pagina de Titulo</title>
+        <link rel="stylesheet" href="Práctica.css">  
+
+    </head>
+    <body>
+        <header id="Inicio">
+            <h1>Construccion de Software Web</h1>
+            <p>Resumen semana N3 html y css intermedio </p>
+
+        </header>
+        <nav>
+            <a href="#Semánticas">Secciones Semánticas HTML</a>
+            <a href="#Enlaces">Enlaces e Imagenes</a>
+            <a href="#Tablas">Tablas</a>
+            <a href="#css-estilos">Estilos css y selectores </a>
+        </nav>
+
+        <main>
+            <section id="Semánticas">
+                <h2 class="resaltado">1. Etiquetas Semánticas</h2>
+                <article>
+                    <h3> El uso  de las Etiquetas semanticas: Section, article, aside</h3>
+                    <p>Es esencial estructurar nuestra pagina de acuerdo a la funcion del 
+                    contenido. <strong>article</strong> es contenido independiente. Mientras
+                     que <strong>section</strong> agrupa contenido relacionado. 
+                    <strong>aside</strong> Por otro lado el aside contiene información de
+                     menor relevancia</p></p>
+                </article>
+                <aside>
+                    <p><em>Nota:</em> Usar correctamente estas etiquetas no cambia el diseño, pero aporta un gran valor
+                     para la <strong>accesibilidad</strong> de la información para los usuarios</p>
+                </aside>
+            </section>
+            <section id="Enlaces">
+                <h2 class="resaltado">2. Enlaces e Imagenes</h2>
+                <p>Con la etiqueta <em>a</em> podemos conectar nuestra web con diferentes secciones. Para volver a la sección principal, 
+                puedes hacer click en el enlace que contenga la ruta hacia el principio</p>
+                <a href="#Inicio" class="boton" title="volver al principio de la página"> Volver
+                arriba </a>
+                <p>La segunda forma de usar la etiqueta <em>a</em> nos sirve para enlazar paginas externas dentro de nuestra
+                 misma pagina. Permitiendo abrirlas dentro de 
+                la misma pestaña o en una pestaña nueva</p>
+                <a href="https://www.google.com" target="_blank" class="boton">Google pagina
+                externa</a>
+                <a href="https://www.google.com" class="boton">Google pagina interna</a>
+                <p>Tambien podemos incluir imagenes usando la etiqueta <strong>img</strong> recuerda
+                siempre usar el atibuto src y alt</p>
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUTExMWFhUXGBoYGBUXGBoaFhgYHRcYGhgZFxcYHSggGholHRcXITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGxAQGzAlICUtLS0tLS0tLS0tLS0tL
+                S0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tKy0tLS0tLS0tLf/AABEIARkAswMBIgACEQEDEQH/xAAbAAACAgMBAAAAAAAAAAAAAAAEBQMGAQIHAP/EAEIQAAIBAgQDBgMECAUEAgMAAAECAwARBBIhMQVBUQYTImFxgTKRoUKxwfAHFCNSYnKC0SQzkqLh
+                FUOy8WPiFlOD/8QAGgEAAgMBAQAAAAAAAAAAAAAAAgMBBAUABv/EAC8RAAICAQMDAwQBAgcAAAAAAAABAhEDBBIhBTFBEyJRFDJhgZFxoQYjNEJisfD/2gAMAwEAAhEDEQA/AObT4hRyqLvVbVdDQAxPWpWkFulDQ3fwGzYuy2vQ8bX1oQQNJotMUwRUUuU
+                4x4OVyNO8tU6T0FILHWsJJUqmTdDqFhap1+dKFltR+DxQ51DQaYTAPEKsiP4Paq+ZAbZeVO8HJcWNNh2EzVS4FXEcWbaUJweR3YkiwFYxclnI86LwuPiSM3cDdTfkchYEjcA23pMk6oanyM7WFKeJSffUEnGFPdkNcMUY66rmVo3UjlqVPuaix8oJ0N/SlK
+                DT5J3WPMJJdVt0pN2tLiK4Y26U64VGWUAC9PI+zyyAd6L+VWoqwZy4JOzUIXBJpbwj7qifMDoTTjEIEiyjQClWHxQuLin5PBViheMNmfM9zUk+T4VFvzzphiMQTogAqJMKqAu1iTSgzbD4Ed2RzIrlvEIikrqRsx+V9K67w970vx/YqOeQyEkX5DSr2jybX
+                TFZPk5YBXq6mP0eQfxf6jXq0fWgK3HHWWtoYySBTeHh19TUbgK46Xrzu7jgu7Cw8NwCqo05VPLhNamwOLjsBm1oywNeeyzmptstxqip8WwtJzEwq6cUw6mk6QeIVoafO9gucVYlDkaGpbkVvxZLyC3SoMpq9GVqxdMdcMlCi5NaY3jlrrGf6jtS6xG5sTt0
+                A5sfSg8fiQ7DILIoCqOZA3ZurMdTTVyBJ0Exs0lyzE2I6DMSdNOmlzflUFjdsqKxGlzmJIHRdiOt+Va4iVbBUuANyd2cgZj5DSw/5qH9Ya58R189aLgDuGTKkhuyiBiPhUPlPPRdct/lWeHyahXPQA/8n86VEAWAtZb5QObHQkksdeXluKiniKEBr3sCfK4
+                zDT0INQ0cnR1jsxIF0tvt56A/iKsYfTWuLcD49JhXDDxoA1o2JAuQNR0bRa6yk+eNWBBDKpuNAbqDcDlvRxdEt2MnUFCTVVtY0/xUv7Ow6UlIuPMVEuSCfCoN71BjMRmNhsKjJNrbVEI7ULOHHDZBTn/qUcQ8ZAHrVd4awoPtrh88Ovl94ooz28kbd3BYn7
+                a4MG3ep/qFerhMsNiRWKZ67A9Its72WkM12NPcchJsKVTJbS2tVsUH3ZYzTS4QIbjUHaj8BxCVTvUKwHnRMcGlOljjLuiupNHpsS7m5JrVZTfSpe6rVU1qYwilSRDk2eyXN7a1LFgTe9EYWK50ppBALik5ZRiqH4oylyU/iqsZXW3wDYen9z9akwfCj3cjkH
+                whgPUKDcf6h86Y4vD3llPMm3uzqbWPrTB8/cyrkOZiUB0sCzW01uduQ2FC5UglG3yV3CYFpWZU0udWI0Vb2H1vW6YRe6sLaytYkG3drcXzH0q4cK4UsMep82J29+VqVPw+0Cj7TkhFO4zEnUeQNz6UHqph+lwV3B8PdkkZf8tTa+2bXYeotR2J4ZJdnf4vi
+                F9ybHYeWW1vSrjDEgWKFBZEZfprr1JsSfWteKLozG2xsP4i2difdrf01PqWyHjpHOJ4rWvc6DfqdW0FdR7LO7YaNmIN1FrA3AAsAeRsABpXOuIw22vuben/AKtXSuxEX+BhPVT/AOTCnpiRva4pcQAxHWmyLalvEYbDMK4lA88ZGtDSSUSkhIvUUkQNQcD
+                YachhW/a3FfsL+n31Lh8CG1vrSft4SsAF+n31FcHFFme7E16hjIa9UnHQpYtOtJRFdjTd5fCfOgY/CpJp5XsFI1tUxXS9bQwnLmO5rJttXHEMhsKhga4rbiDWS1D4NtKGyaLBw1LLejQaX8NlBFHkVQycyZehxFGow8as0jyKMwBJO4ORRlGnxDLf3oiDjm
+                FZwqNtsGFjfa+vPf50NjMOWiLLH3hve2gsAAupPpSCSF5LiTDRLYaMCQxNxYXU/wDFcqkuQnwX6QxkXJ03sdvWk+M4zhkfxP4hppuAdT87D5UKjEYcs3xDQD5Cq9+rMrX/AFdZSdbs34XAoIRt8hybSL3gpI5QTEwNuR0PmRfegeJQl/Cx8Q26X8wNDeq3F
+                C+a36syH/4yDb+kEmrXETkXvLhttRY77kdaKXHY6PJQuKSXJ0+Wn063rqHZIZcJBE1hIsYJQkZgCTqRvzHzqjQYUI7TMDbOwWwvYDn5k9Ks/AYUGLjeIsyyrIGL2zXCBuXIgKfKxFNWSnQtYLTbLWUoOaHMCKaBKDX4qsFYSRREEi1SthmBuBTOaKzXqQCo
+                JsTmC2oqt/pCH7AddPvFXDErbUnSqX+kLGI8YVWBNxsfOuIOe16txHXqg4uSyE1H3eZgvLnQw4iBsorYcVPIKK55vwa0ejwr3T5/A1xCi1hbT5UBQrY1jzrT9YPWu9f8EPoy8T/sY4i+lDYV6kxHiFDDSijKzO1GmlgltYdw7G2Yi9Of17SqZiWOa4p12a
+                4bJiJMpJtSpY7YMclIvnBpAYUy7kHOSdL5j8tLVjEcPQElVUsTpoLknpUf/SjhUNiTnI06EA7e33CtHxrKcwPiCmw9dPuvVXItsqLeN7lYZL2fLI8YkXOADa4ylr3Zb7bUvweGVlyugLLoQfiHzoaftHMLBEUNuN/rpXp+KSysJJm8YUAZem+vXeua4GWP
+                 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
+                C8ia5Cjd8FVnVkOU30A5ciAR9CK9XQeCdg1xkKYjvnUtmUgKCLxsYybnrkv71mq/JtrW0ZxjaWHOi8Hhg0JlaxKQ90n9Uzs5+SqP6jSjH8QhAv30R02Ein8aLwOLhhwytiWRY9XyhzJLIWJYKIo2sqlbavbncVk6DFk52oytWt8dqaEfEBLCkWRjaVWcKNMvjIGp6rlbyvROBxTQld5JH05Ek7k3NgAOtE8Wxhliw8zJkM5lkROaRr3ccY6agM3uOQFACRIlLsbnlf6KANtda18sUpUidOpLGrLxgZ5yLMI1vy7wn6KDUM+HfVgAb/ABBLnXrawJHtpVT4djMZMLrljX95gTceS3BNPcFiFjKKXMrubBdb5uixpryPPnvVPPgjkjtkWoomI/PtWwrRMUshLLprsdxrpf2qUCvNzW1tDDxrZBWAKkApbCijWU7VMtRSrpUkZoX2CJBUHEY3aN0jNneOVEN7WkZL
+                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
+                qhnDnBa2HIqB9NKLgOnpofahsNsv56UWu7ev4CvE5vuZpQ+09exvy51rNrUzbGhjtSkFQO4IqCW9GS7UJiNqfBgONAJbWtcpPKpF3NEryqxdAJAJgrKcPvRzb1PBvQyyyS4HRigROG
+                 Ko21NSyR7ADbSjTv7H8Kij50r1JPlhNA82HuLGlOITQqRrT6fb2pLP8Y9R+FP08m2JyI2hiyqBW4NarsKzXq0Uj
+                MSXN+QqdlFYwnw/OsPv8/uo6ANcor1RtXq6jqP/9k="
+               alt="Ejemplo de etiqueta a ref en HTML"
+            style="max-width: 250px; display: block; margin: 10px auto; border-radius:8px">
+            </section>
+            <section id="Tablas">
+                <h2 class="resaltado">3. Presentación de datos</h2>
+                <p>Las tablas hoy en día se utilizan para presentar datos tabulados.</p>
+                <table>
+                    <tr>
+                        <th>Etiqueta HTML</th>
+                        <th>Descripción o funcionalidad</th>
+                    </tr>
+                    <tr>
+                        <td>Strong</td>
+                        <td>Resalata el texto con negrita</td>
+                    </tr>
+                    <tr>
+                        <td>Em</td>
+                        <td>Resalta el texto con cursiva</td>
+                    </tr>
+                    <tr>
+                        <td>Br</td>
+                        <td>Salto de línea</td>
+                    </tr>
+                </table>
+
+            </section>
+            <section id="css-estilos">
+                <h2 class="resaltado">4. Estilos CSS y selectores</h2>
+                <article>
+                    <p>El aspecto de esta pagina esta controlado por CSS. En el codigo html notaras el uso de css por 
+                     medio de los selectores, tales como: selector <em>etiqueta</em>, selector<em>clase</em>,selector 
+                    <em>id</em>, selector <em>pseuclase</em>
+                    <p id="mensaje importante"><code>La cascada:</code> El orden de escritura, la especificacion y la
+                     importancia de los estilos css.</p>
+                         
+                </article>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>Practica de HTML semantico y CSS intermedio</P>
+            <p>Copyright 2026 - Nicole Guarin Quintero (resumen)</p>
+        </footer>
+    </body>
+</html>
