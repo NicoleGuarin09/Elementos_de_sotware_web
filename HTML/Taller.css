@@ -1,15 +1,86 @@
-      body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            display: flex;
-            justify-content: center;
-            padding: 20px;
-        }
-        table {
-            border-collapse: collapse;
-            width: 100%;
-            max-width: 1000px;
-            background-color: white;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        
+/* =========================
+   PUNTO 4: HERENCIA GLOBAL
+========================== */
+body {
+  font-size: 18px;
+  font-family: Tahoma;
+  color: rgb(27, 26, 26);
+  background-color: rgb(142, 204, 233);
+  line-height: 1.5;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* =========================
+   TABLA (PUNTO 1)
+========================== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 40px;
+  background-color: whitesmoke;
+  color: black;
+}
+
+th, td {
+  border: 1px solid #0c0b0c;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #e615c3;
+  color: white;
+}
+
+/* =========================
+   PÁGINA SEMÁNTICA (PUNTO 2)
+========================== */
+header {
+  background-color: rgba(12, 11, 11, 0.2);
+  padding: 15px;
+  text-align: center;
+}
+
+main {
+  background-color: white;
+  padding: 15px;
+  margin-top: 10px;
+}
+
+main p {
+  margin-bottom: 10px;
+}
+
+aside {
+  background-color: #fff3cd;
+  padding: 15px;
+  margin-top: 10px;
+  border-left: 5px solid #ee41df;
+}
+
+footer {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+/* =========================
+   PUNTO 3 y 5 (CAJAS DE TEXTO)
+========================== */
+.pregunta {
+  background-color: white;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.respuesta {
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin-top: 5px;
+  border-left: 4px solid #333;
+}
