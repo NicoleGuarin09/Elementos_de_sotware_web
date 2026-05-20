@@ -1,0 +1,148 @@
+/* Reset general */
+* {
+    box-sizing: border-box;
+}
+
+/* Fondo general */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: whitesmoke;
+    color: #333;
+}
+
+/* Título principal estilo banner */
+h1 {
+    width: 100%;
+    height: 220px;
+    background: linear-gradient(rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)),
+    url('data:image/png;base64,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');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    color: rgb(253, 11, 144);
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgb(1, 5, 14);
+}
+
+/* Contenedor de cada sección */
+section {
+    width: 85%;
+    max-width: 950px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Subtítulos */
+h2 {
+    color: fuchsia;
+    border-bottom: 2px solid pink;
+    padding-bottom: 10px;
+}
+
+/* Párrafos */
+p {
+    line-height: 1.7;
+    font-size: 17px;
+}
+
+/* Estilo para mark */
+mark {
+    background-color: fuchsia;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 5px;
+}
+
+/* Cajas de display */
+.box {
+    width: 150px;
+    height: 60px;
+    margin: 10px;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+/* Diferentes displays */
+.block {
+    display: block;
+    background-color: #333;
+}
+
+.inline {
+    display: inline;
+    background-color: deeppink;
+    padding: 10px;
+}
+
+.inline-block {
+    display: inline-block;
+    background-color: purple;
+}
+
+.none {
+    display: none;
+}
+
+/* Imagen dentro del párrafo */
+.img-inline {
+    width: 100px;
+    border: 3px solid pink;
+    border-radius: 10px;
+    vertical-align: middle;
+    margin: 0 10px;
+}
+
+/* Imagen entre párrafos */
+.img-between {
+    display: block;
+    margin: 20px auto;
+    border: 5px solid fuchsia;
+    border-radius: 15px;
+}
+
+/* Contenedor de imagen */
+.image-container {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border: 5px solid hotpink;
+    box-sizing: border-box;
+    margin: 20px auto;
+    background-color: #fafafa;
+    border-radius: 12px;
+}
+
+/* Imagen dentro del contenedor */
+.image-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+/* Texto importante */
+strong {
+    color: fuchsia;
+}
+
+/* Efecto hover para secciones */
+section:hover {
+    transform: scale(1.01);
+    transition: 0.3s;
+}
